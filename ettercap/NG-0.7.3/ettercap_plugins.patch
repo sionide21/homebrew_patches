@@ -1,0 +1,19 @@
+*** ettercap-NG-0.7.3-orig/src/ec_plugins.c	2004-07-12 15:57:26.000000000 -0400
+--- ettercap-NG-0.7.3-mod/src/ec_plugins.c	2009-11-16 10:36:22.000000000 -0500
+***************
+*** 39,45 ****
+  #endif
+  
+  /* symbol prefix for some OSes */
+! #ifdef NEED_USCORE
+     #define SYM_PREFIX "_"
+  #else
+     #define SYM_PREFIX ""
+--- 39,45 ----
+  #endif
+  
+  /* symbol prefix for some OSes */
+! #if NEED_USCORE
+     #define SYM_PREFIX "_"
+  #else
+     #define SYM_PREFIX ""
